@@ -54,6 +54,7 @@
         "iomanip": "cpp",
         "cinttypes": "cpp",
         "valarray": "cpp",
-        "chrono": "cpp"
+        "chrono": "cpp",
+        "charconv": "cpp"
     }
 }

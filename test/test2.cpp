@@ -1,4 +1,5 @@
 #include <iostream>
+#include "test.h"
 
 using namespace std;
 
@@ -17,18 +18,18 @@ public:
 
     void get_area(){
        double area = 2*m_L*m_H + 2*m_L*m_W + 2*m_W*m_H;
-       cout << "���Ϊ�� "<< area << endl;
-    }//���
+       cout << "���Ϊ��? "<< area << endl;
+    }//���?
 
     void get_volume(){
         double volume = m_L*m_H*m_W;
-        cout << "���Ϊ: " << volume << endl;
+        cout << "����?: " << volume << endl;
     }
 
 };
 
 int main(){
-   cout << "胡思彤大屁股";
+   cout << "Fdasf";
 
     system("pause");
 }

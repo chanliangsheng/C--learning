@@ -5,6 +5,7 @@
 #include <vector>
 #include <utility>
 #include <algorithm>
+#include "boost/lexical_cast.hpp"
 using namespace std;
 
 ostream& operator<<(ostream &cout , pair<double , double> &p){//cout需要传递引用，因为流对象是花销很多的，如果传递副本会过大开销，所以只允许传递引用
@@ -55,6 +56,7 @@ vector<MS2> scanMgf(string file_name = "D://R package//data//mzml(idx)//NEG_ID_0
 
     string buf;//存储每一行的字符
     string buf_inside;
+    std::string::size_type sz;//string转化为double的标识符
     while (getline(ifs , buf))
     {   
         int count = 1;
